@@ -1,0 +1,19 @@
+Options -Indexes
+RewriteEngine On
+
+# Bỏ qua nếu là file/thư mục thực sự tồn tại (css, js, ảnh...)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Tất cả request khác → index.php
+RewriteRule ^(.*)$ index.php [QSA,L]
+
+# Bảo vệ file nhạy cảm
+<Files .env>
+    Order allow,deny
+    Deny from all
+</Files>
+<Files "*.sql">
+    Order allow,deny
+    Deny from all
+</Files>
