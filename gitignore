@@ -1,0 +1,21 @@
+# Bảo mật - không upload lên GitHub
+.env
+.env.production
+
+# Cache & logs
+/storage/
+*.log
+
+# Upload của người dùng (ảnh sản phẩm, avatar...)
+/public/uploads/products/
+/public/uploads/avatars/
+
+# IDE
+.vscode/
+.idea/
+*.DS_Store
+Thumbs.db
+
+# Debug files
+test_*.php
+check_*.php
