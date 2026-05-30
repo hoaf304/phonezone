@@ -21,8 +21,8 @@ Password: Admin@123
 
 **Khách hàng:**
 ```
-Email:    test@phonezone.vn
-Password: 123456
+Email:    hoa123@gmail.com
+Password: hoa123@
 ```
 
 ---
